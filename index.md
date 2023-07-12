@@ -1,8 +1,9 @@
 # The-Ultimate-Device
 The car displayed is only a miniscule landmark to the infinitely technical device that one like me is going to assemble. Once the first milestone is achieved, I will be able to rule... <!--- Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails! -->
 
+
 <!---You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:-->
-```HTML 
+
 I love rice
 Anything that has chicken in it I will eat. 
 
@@ -14,6 +15,32 @@ Anything that has chicken in it I will eat.
 
 ![Headstone Image](logo.svg)
   
+# First Milestone
+
+**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+For your first milestone, describe what your project is and how you plan to build it. You can include:
+- The project is a wireless and serial connection and creates a branch of communication between computers and other advanced components and utilizes very strong potential energy.  So we have two parts here. The transmitter and the reciever. To start, the transmitter which is going to send the data of our hands to the reciever is all powered with a 9v battery. What takes that power is all the other components in the transmitter which are the MPU6050 motor servo sensor, an arduino micro 5v, and lastly HC-05 bluetooth module. Housing a microcontroller, which is basically a mini computer equipped with RAm, a micro-processor, and a bunch of other computer components, the MPU6050 is able to communicate with the arduino 5v using the i2c protocol. Which is a serial communication bus. If you still don't know what it is, check in the bill of materials to learn more. It is connected to the Arduino via the 2 and 3 pins on the Arduino micro from the SDA and SCL pins on the accelerometer. After that, the bluetooth module has been used to create wireless serial communication between transmitter and reciever. We have a HC-05 in both transmitter and reciever and we must pair them. To do this, we set one as master and one as slave; once done, either module, slave or master, can be in either part, transmitter or reciever. That is it for the transmitter, now we have the reciever. The reciever has a total of 4 components and is powered by 6 double A batteries, which outputs a total of 9V. The battery powers the Arduino Uno R3, the L298 motor driver, and the other HC-05 bluetooth module. First, the L298 motor driver supplies a surplus of voltage to the 4 dc motors that are connected to the L298 H-bridge connection which is able to turn 2 motors clockwise or counter-clockwise. The left motors are connected to the out 1 and 2 pins. While the right motors are connected via the out 3 and 4 pins. To get power, the voltage goes into the Vin pin of the L298, while the ground goes into the ground pin. L298 has 6 input pins which 3 of them controllingthe left side motors and the other 3 for the right side motors. Pins 5, 6, 7 of the Arduino Uno are connected to the L298 inputs pins to control the left side motors. While 8, 9, 10 pins of the Arduino Uno are connected to the L298 to control the rightside motors. Pin 5 - ENB, Pin 6 - IN3, Pin 7 - IN4/ Pin 8 - In2, Pin 9 - In1, Pin 10 - EnA. Whithout going to much into it , pins 6 and 7 control left side motors to go counterclockwiseor clockwise, while pinand8 and 9 control the right side motors to go counterclockwise or clockwise. Pins 5 and 10 enable the motors for each side. Lastly, but never the least is the other bluetooth module for the reciever. 
+- Technical progress you've made so far
+- Challenges you're facing and solving in your future milestones
+- What your plan is to complete your project
+  
+
+# Second Milestone
+
+**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+For your second milestone, explain what you've worked on since your previous milestone. You can highlight:
+- Technical details of what you've accomplished and how they contribute to the final goal
+- What has been surprising about the project so far
+- Previous challenges you faced that you overcame
+- What needs to be completed before your final milestone
+
+
 # Final Milestone
 
 <**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**>
@@ -28,29 +55,7 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 
 
-# Second Milestone
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-For your second milestone, explain what you've worked on since your previous milestone. You can highlight:
-- Technical details of what you've accomplished and how they contribute to the final goal
-- What has been surprising about the project so far
-- Previous challenges you faced that you overcame
-- What needs to be completed before your final milestone 
-
-# First Milestone
-
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CaCazFBhYKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-For your first milestone, describe what your project is and how you plan to build it. You can include:
-- An explanation about the different components of your project and how they will all integrate together
-- Technical progress you've made so far
-- Challenges you're facing and solving in your future milestones
-- What your plan is to complete your project
 
 # Schematics 
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
