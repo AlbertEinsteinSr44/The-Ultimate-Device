@@ -10,7 +10,6 @@ Anything that has chicken in it I will eat.
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
 | Kebba J | Lafollette HS | Electrical Engineering | Incoming Sophmore
-'''HTML
 
 **Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
 
@@ -34,11 +33,11 @@ Anything that has chicken in it I will eat.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
-- Technical details of what you've accomplished and how they contribute to the final goal
+- My second achievement was to attach the dc motors to the frame and connect them to the L298 motor driver. To attach them to the frame, I used stands on either side of the motor and placed the dc motors near the edge of the frame using the stands. To keep the motors in place, I used screws and placed them through the holes of the motor and the stands, and then used a nut to secure it in place, preventing it from being loose it any possible way. After that, I attached black and red wires to the already soldered motor tabs and did the same with other 3 motors. Now I had a frame with four motors, it practically looked like a car already. But we needed to connect them to the L298 motor driver. Be if we had 8 wires with only 4 output pins on the L298 board, all pins wouldn't be able to get output from the L298. So we now had to connect the two motors on each side to each other to get only two wires to carry the output to two motors total. So I simply connected the red wires from one motor to other and did the same with the black wire on each motor. To test if my solder was reliable, I used a battery holder which held 3 battery cells and connected black to black and red to red wires of the motor. It worked the first time, though my soldering needed a bit more work. But lastly, we connected the motors to L298 now that we have the motors connected to each other. Connecting black to out 1 and red to out 2 for the left motors and connecting black to out 3 and out 4 for the right side motors is what made this connection possible. To connect the wires to the screw terminal was basically the only only puzzle I faced. The task of actually putting in the wire in the screw terminal was quite surprising. Having to fold the stranded core wires so they could fit into the screw terminal was no easy task, but I was able to do it nonetheless. Even though there is the probability that the wire may short circuit. The task of actually putting in the wire in the screw terminal was quite surprising. I actually recklessly put in the wire into the screw terminal because I was quite excited to move on to finishing the rest of the car. Which is just powering the transmiitter. 
 - What has been surprising about the project so far
 - Previous challenges you faced that you overcame
 - What needs to be completed before your final milestone
-
+![Headstone Image](Fabulous Blorr-Elzing.png)
 
 # Final Milestone
 
