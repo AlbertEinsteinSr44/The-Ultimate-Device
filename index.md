@@ -37,7 +37,8 @@ Anything that has chicken in it I will eat.
 - What has been surprising about the project so far
 - Previous challenges you faced that you overcame
 - What needs to be completed before your final milestone
-![Headstone Image](Fabulous Blorr-Elzing.png)
+
+![Image](Fabulous Blorr-Elzing.png)
 
 # Final Milestone
 
