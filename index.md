@@ -64,7 +64,7 @@ For your final milestone, explain the outcome of your project. Key details to in
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser. 
 
 # Code
-Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
+Code for Transmitter
 
 ```c++
 void setup() {
@@ -85,9 +85,24 @@ Don't forget to place the link of where to buy each component inside the quotati
 
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-| Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+| Arduino Uno R3 | Microcontroller for reciever | $27.60 | <a href="https://store-usa.arduino.cc/products/arduino-uno-rev3?selectedStore=us"> Link </a> |
+| Arduino Micro 5v | Microcontroller for transmitter | $19.92 | <a href="https://store-usa.arduino.cc/products/arduino-micro?selectedStore=us"> Link </a> |
+| MPU6050 3 axis Accelerometer | Measures acceleration of ones hand| $9.99 | <a href="https://www.amazon.com/HiLetgo-MPU-6050-Accelerometer-Gyroscope-Converter/dp/B00LP25V1A/ref=sr_1_1_sspa?crid=3TZA15KTY36AH&keywords=mpu6050&qid=1689698110&sprefix=MPU%2Caps%2C158&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"> Link </a> |
+| L298 Motor Driver Board | Amplifies Voltage going into the DC motors | $11.99 | <a href="https://www.amazon.com/HiLetgo-Controller-Stepper-H-Bridge-Mega2560/dp/B07BK1QL5T/ref=sr_1_3?crid=2HN2Y2XKCBAHR&keywords=SparkFun+Dual+H-Bridge+motor+drivers+L298&qid=1689690988&sprefix=sparkfun+dual+h-bridge+motor+drivers+l298%2Caps%2C243&sr=8-3"> Link </a> |
+| Solderless breadboard half-size | Creating connections between components | $6.69 | <a href="https://www.amazon.com/Pcs-MCIGICM-Points-Solderless-Breadboard/dp/B07PCJP9DY/ref=sr_1_1_sspa?crid=3PHS6KU6D48B2&keywords=solderless+breadboard+half+size&qid=1689698322&sprefix=Solderless+breadboard+half+%2Caps%2C124&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1/"> Link </a> |
+| HC-05 Bluetooth Module x2 | Admitting radio waves between transmitter and reciever | $19.98 | <a href="https://www.amazon.com/DSD-TECH-HC-05-Bluetooth-Wireless/dp/B074GMQ6G3/ref=sr_1_2_sspa?crid=24LNCC0IP1VA0&keywords=hc-05+bluetooth+module&qid=1689698399&sprefix=HC-05+%2Caps%2C130&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"> Link </a> |
+| Male to Male Jumper Wire kit | Creating connections on a breadboard | $10.99 | <a href="https://www.amazon.com/Preformed-Breadboard-Assorted-Solderless-Prototyping/dp/B07WC3YKGQ/ref=sr_1_8?crid=37HPTMGB6YR8E&keywords=breadboard+male+jumper+wire+kit&qid=1689698782&sprefix=Jumper+wire+kit+male+to+male%2Caps%2C135&sr=8-8"> Link </a> |
+| 120pcs,20cm Male to Female Jumper wires | Creating connections from component to arduino | $6.99 | <a href="https://www.amazon.com/EDGELEC-Breadboard-Optional-Assorted-Multicolored/dp/B07GD2BWPY/ref=sr_1_3?crid=1V5Y41GAWKSXO&keywords=male+to+female+jumper+wires&qid=1689699096&sprefix=Male+to+female+jumper%2Caps%2C151&sr=8-3"> Link </a> |
+| 4 pc DC electric motor, DigiYes | Motion enabler | $8.99 | <a href="https://www.amazon.com/DiGiYes-Electric-Motor-3V-12V-Shaft/dp/B0BSP7ZG1B/ref=sr_1_42?crid=888U0MM72JZY&keywords=Geared+DC+Motor%2C+Brushed%2C+12+V%2C+180+rpm%2C+500+g-cm&qid=1689699254&sprefix=geared+dc+motor%2C+brushed%2C+12+v%2C+180+rpm%2C+500+g-cm%2Caps%2C164&sr=8-42"> Link </a> |
+| Maker focus DIY Robot car | Corps/industry for robot car | $18.59 | <a href="https://www.amazon.com/MakerFocus-Chassis-MEGA2560-MEGA1280-Microcontroller/dp/B01LYZDP9U"> Link </a> |
+| Energizer Alkaline Battery Pack, AA| Powering the robot car | $19.62 | <a href="https://www.amazon.com/Energizer-Batteries-Double-Long-Lasting-Alkaline/dp/B09RTVD1GF/ref=sr_1_1_sspa?keywords=Alkaline+battery+pack+AA&qid=1689699842&rdc=1&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"> Link </a> |
+| Battery Holder | Houses Power| $9.98 | <a href="https://www.amazon.com/FOXTIP-Battery-Holder-Bundle-1Slots/dp/B0C5ZY2TRN/ref=sr_1_2_sspa?crid=17DXAJOBXNYAB&keywords=Battery+Holder%2C+18650+x+2&qid=1689700095&sprefix=battery+holder%2C+18650+x+2%2Caps%2C171&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"> Link </a> |
+| Boat Rocket Switch | Turns on the car | $6.29 | <a href="https://www.amazon.com/Baomain-SOKEN-Light-Rocker-Switch/dp/B01LT3F5B0/ref=sr_1_4?crid=1SS8QN1BQ11K3&keywords=Rocket+Switch&qid=1689700414&sprefix=rocker+switch%2Caps%2C168&sr=8-4"> Link </a> |
+| Battery Clip | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
+| Velcro | Holds the transmitter to ones hand | $7.99 | <a href="https://www.amazon.com/Adjustable-Fastening-Reusable-Management-Organizer/dp/B0BZLCX3KY/ref=sr_1_2_sspa?crid=2KYCJUV9D5SU6&keywords=velcro+straps&qid=1689700569&sprefix=Velcro+%2Caps%2C595&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1/"> Link </a> |
+| Foam tape, double sided | Adhesive application for connecting components to frame | $6.99 | <a href="https://www.amazon.com/TSSART-2Pack-Foam-Tape-Thickness/dp/B0BZQJ3W5M/ref=sr_1_1_sspa?crid=38Z7IECOWPZ0F&keywords=3m+pe+foam+double+sided+tape&qid=1689700655&sprefix=PE+foam+tape+do%2Caps%2C161&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1/"> Link </a> |
+
+
 
 # Other Resources/Examples
 One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
