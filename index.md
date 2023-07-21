@@ -16,14 +16,15 @@ Anything that has chicken in it I will eat.
 
 
 ![Headstone Image](logo.svg)
-  
-# First Milestone
-<iframe width="962" height="541" src="https://www.youtube.com/embed/x4_awlkcJw0" title="Kebba J. Milestone 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-So, my first shed of skin was actually getting the accelerometer to work. To me, it did not seem like this was such a big problem, and I was only miliseconds away from getting to the dialogue you see above(Intro). I thought at first that maybe the wires to the power rail were reversed, or the pins for the I2C protocol were not in the right place. These were definite problems initially. But numerous displays of the consistent coordinates of 89 on each plane(X,Y,Z) on the serial monitor meant that the accelerometer was either not connected via the I2C protocol, or there was a presence of an opened path for which the current was flowing, and an absence of a closed path for current to flow, or continuity, between the two components. We tested multiple times for continuity with my new best friend, the multimeter. But in the end, continuity was in check. We even checked for dc and ac voltage, (Direct and Alternating current), but still, everything seemed fine. It was then we started to get suspicious of the hardware itself, considering hardwares like the accelerometer are known to very concealing. The LED was on, but something on the hardware could've been destroyed. //So since the Arduino Micro wasn't telling us anything, and there was no way to test the hardware for any problems, I was first tasked to dispose of the first accelerometer and replace it with a new one. It took some time because I had to solder new headers to the MPU6050, a skill that was much faster for me now than before, and then// I connected the acclerometer to the Arduino Micro with the serial protocol and I tested again on the serial monitor. But still, the same result. Fear started to lurk near, but continuity said something about the Micro that may have been useful. Even though continuity was in check, there were numerous times while testing that Multimeter didn't actually beep, but did later, almost like the Micro was hiding something, or not working itself. So we turned to the Arduino UNO R3 which also had a microcontroller housed on its board. I connected both MPU and Uno to the breadboard. The results that the serial monitor displayed were shocking. As numbers ranging from 60-130 in X,Y,Z coordinates tickled my retinas. It was sight never seen before. As a rising engineer, I could never ever see something more beautiful than what I saw on that monitor. It was happy moment, but there were also hard times, sensitive battles, and very personified components. An auspicious experience. And very helpful concepts. Even though continuity was in check, it did contribute greatly to the final conclusion, and now stored in my brain for life. 
-Now that the problems are out the way, we can now thrust into finally finishing the car. But just a note is that I am missing some parts. There are some things that I lost, or somehow they broke, Micro, causing physical complexities(and also decrease in self-esteem) with the car. But at this point, I basically finished the beginning of the beginning
+# Latest Milestone
 
-  
+<iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+For my third milestone, I have paired the bluetooth modules together, and successfully got the reciever communicating to the transmitter. To do this, we had to pair the HC-05 bluetooth modules by putting them both in AT command mode by holding the reset button before plugging them into power, and then put one on each microcontroller, both arduino micro and uno. From there I sent the AT commands to the Bluetooth modules and configured them both, setting one as frame(master) and another as wheel(slave). After that, I paired or binded the frame to the wheel by sending the command to the frame (AT+BIND=(address of wheel). This commands binds the frame to the wheel by locking the frame to the address of the wheel. This successfully pairs the bluetooth modules, and all that was left was to connect the HC-05's to the original breadboards and connect the tx and rx pins of the microcontrollers to the bluetooth modules. 
+
+
+
 
 # Second Milestone
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -35,20 +36,24 @@ Circuit Diagram of Motor Testing
 
 ![Elzing (2)](https://github.com/AlbertEinsteinSr44/The-Ultimate-Device/assets/138896021/19c86d7e-4b2b-4469-8d4c-d1941b05e081) 
 
+  
 
-# Final Milestone
+# First Milestone
+<iframe width="962" height="541" src="https://www.youtube.com/embed/x4_awlkcJw0" title="Kebba J. Milestone 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/y3VAmNlER5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+So, my first shed of skin was actually getting the accelerometer to work. To me, it did not seem like this was such a big problem, and I was only miliseconds away from getting to the dialogue you see above(Intro). I thought at first that maybe the wires to the power rail were reversed, or the pins for the I2C protocol were not in the right place. These were definite problems initially. But numerous displays of the consistent coordinates of 89 on each plane(X,Y,Z) on the serial monitor meant that the accelerometer was either not connected via the I2C protocol, or there was a presence of an opened path for which the current was flowing, and an absence of a closed path for current to flow, or continuity, between the two components. We tested multiple times for continuity with my new best friend, the multimeter. But in the end, continuity was in check. We even checked for dc and ac voltage, (Direct and Alternating current), but still, everything seemed fine. It was then we started to get suspicious of the hardware itself, considering hardwares like the accelerometer are known to very concealing. The LED was on, but something on the hardware could've been destroyed. //So since the Arduino Micro wasn't telling us anything, and there was no way to test the hardware for any problems, I was first tasked to dispose of the first accelerometer and replace it with a new one. It took some time because I had to solder new headers to the MPU6050, a skill that was much faster for me now than before, and then// I connected the acclerometer to the Arduino Micro with the serial protocol and I tested again on the serial monitor. But still, the same result. Fear started to lurk near, but continuity said something about the Micro that may have been useful. Even though continuity was in check, there were numerous times while testing that Multimeter didn't actually beep, but did later, almost like the Micro was hiding something, or not working itself. So we turned to the Arduino UNO R3 which also had a microcontroller housed on its board. I connected both MPU and Uno to the breadboard. The results that the serial monitor displayed were shocking. As numbers ranging from 60-130 in X,Y,Z coordinates tickled my retinas. It was sight never seen before. As a rising engineer, I could never ever see something more beautiful than what I saw on that monitor. It was happy moment, but there were also hard times, sensitive battles, and very personified components. An auspicious experience. And very helpful concepts. Even though continuity was in check, it did contribute greatly to the final conclusion, and now stored in my brain for life. 
+Now that the problems are out the way, we can now thrust into finally finishing the car. But just a note is that I am missing some parts. There are some things that I lost, or somehow they broke, Micro, causing physical complexities(and also decrease in self-esteem) with the car. But at this point, I basically finished the beginning of the beginning
 
-For my third milestone, I have paired the bluetooth modules together, and successfully got the reciever communicating to the transmitter. To do this, we had to pair the HC-05 bluetooth modules by putting them both in AT command mode by holding the reset button before plugging them into power, and then put one on each microcontroller, both arduino micro and uno. From there I sent the AT commands to the Bluetooth modules and configured them both, setting one as frame(master) and another as wheel(slave). After that, I paired or binded the frame to the wheel by sending the command to the frame (AT+BIND=(address of wheel). This commands binds the frame to the wheel by locking the frame to the address of the wheel. This successfully pairs the bluetooth modules, and all that was left was to connect the HC-05's to the original breadboards and connect the tx and rx pins of the microcontrollers to the bluetooth modules. 
-
-
-
-
-
+  
 
 
-<!--# Schematics 
+
+
+
+
+
+
+<!---# Schematics 
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser.--> 
 
 # Code
