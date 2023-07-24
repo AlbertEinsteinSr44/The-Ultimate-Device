@@ -2,13 +2,7 @@
 The car displayed is only a miniscule landmark to the infinitely technical device that one like me is going to assemble. <!--- Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails! -->
 
 # Intro
-
-
-<!---You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:-->
-
-I love rice
-
-Anything that has chicken in it I will eat. 
+This repository is documentation for my hand controlled robot car. The steps and skills needed for this car is not your average merrygoround. Using an accelerometer that communicates with an arduino micro 5v using the I2C protocol, the device will be able to use serial communication to transmit data over long distances. With the exception of two bluetooth modules on both transmitter and reciever, to transmit and recieve data wirelessly.
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
@@ -55,9 +49,11 @@ Now that the problems are out the way, we can now thrust into finally finishing 
 
 <!---# Schematics 
 Here's where you'll put images of your schematics. [Tinkercad](https://www.tinkercad.com/blog/official-guide-to-tinkercad-circuits) and [Fritzing](https://fritzing.org/learning/) are both great resoruces to create professional schematic diagrams, though BSE recommends Tinkercad becuase it can be done easily and for free in the browser.--> 
-
+<img src="Schematic_HC05-HC06_2023-07-24.jpg" alt="schematic" height="200"/>
 # Code
-Code for Transmitter(provided by https://www.hackster.io/embeddedlab786/hand-gesture-control-robot-via-bluetooth-94b13d)
+### Code for Transmitter
+
+[Provided by Hackster.io @Muhammad Ansar](https://www.hackster.io/embeddedlab786/hand-gesture-control-robot-via-bluetooth-94b13d)
 
 ```c++
 #include <SoftwareSerial.h>
@@ -124,6 +120,89 @@ Serial.println(AcZ);
 }
 ```
 
+### Code for reciever
+[Provided by Hackster.io @Muhammad Ansar](https://www.hackster.io/embeddedlab786/hand-gesture-control-robot-via-bluetooth-94b13d)
+```c++
+#include <SoftwareSerial.h>
+SoftwareSerial BT_Serial(0, 1); // RX, TX
+
+#define enA 10//Enable1 L298 Pin enA 
+#define in1 9 //Motor1  L298 Pin in1 
+#define in2 8 //Motor1  L298 Pin in1 
+#define in3 7 //Motor2  L298 Pin in1 
+#define in4 6 //Motor2  L298 Pin in1 
+#define enB 5 //Enable2 L298 Pin enB 
+
+char bt_data; // variable to receive data from the serial port
+int Speed = 150; //Write The Duty Cycle 0 to 255 Enable Pins for Motor Speed  
+
+void setup() { // put your setup code here, to run once
+
+Serial.begin(38400); // start serial communication at 9600bps
+BT_Serial.begin(38400); 
+
+pinMode(enA, OUTPUT); // declare as output for L298 Pin enA 
+pinMode(in1, OUTPUT); // declare as output for L298 Pin in1 
+pinMode(in2, OUTPUT); // declare as output for L298 Pin in2 
+pinMode(in3, OUTPUT); // declare as output for L298 Pin in3   
+pinMode(in4, OUTPUT); // declare as output for L298 Pin in4 
+pinMode(enB, OUTPUT); // declare as output for L298 Pin enB 
+
+delay(200);
+}
+void loop(){
+if(BT_Serial.available() > 0){  //if some date is sent, reads it and saves in state     
+bt_data = BT_Serial.read(); 
+Serial.println(bt_data);          
+}
+  
+     if(bt_data == 'f'){forword();  Speed=180;}  // if the bt_data is 'f' the DC motor will go forward
+else if(bt_data == 'b'){backword(); Speed=180;}  // if the bt_data is 'b' the motor will Reverse
+else if(bt_data == 'l'){turnLeft(); Speed=250;}  // if the bt_data is 'l' the motor will turn left
+else if(bt_data == 'r'){turnRight();Speed=250;} // if the bt_data is 'r' the motor will turn right
+else if(bt_data == 's'){Stop(); }     // if the bt_data 's' the motor will Stop
+
+analogWrite(enA, Speed); // Write The Duty Cycle 0 to 255 Enable Pin A for Motor1 Speed 
+analogWrite(enB, Speed); // Write The Duty Cycle 0 to 255 Enable Pin B for Motor2 Speed 
+
+delay(50);
+}
+
+void forword(){  //forword
+digitalWrite(in1, HIGH); //Right Motor forword Pin 
+digitalWrite(in2, LOW);  //Right Motor backword Pin 
+digitalWrite(in3, LOW);  //Left Motor backword Pin 
+digitalWrite(in4, HIGH); //Left Motor forword Pin 
+}
+
+void backword(){ //backword
+digitalWrite(in1, LOW);  //Right Motor forword Pin 
+digitalWrite(in2, HIGH); //Right Motor backword Pin 
+digitalWrite(in3, HIGH); //Left Motor backword Pin 
+digitalWrite(in4, LOW);  //Left Motor forword Pin 
+}
+
+void turnRight(){ //turnRight
+digitalWrite(in1, LOW);  //Right Motor forword Pin 
+digitalWrite(in2, HIGH); //Right Motor backword Pin  
+digitalWrite(in3, LOW);  //Left Motor backword Pin 
+digitalWrite(in4, HIGH); //Left Motor forword Pin 
+}
+
+void turnLeft(){ //turnLeft
+digitalWrite(in1, HIGH); //Right Motor forword Pin 
+digitalWrite(in2, LOW);  //Right Motor backword Pin 
+digitalWrite(in3, HIGH); //Left Motor backword Pin 
+digitalWrite(in4, LOW);  //Left Motor forword Pin 
+}
+
+void Stop(){ //stop
+digitalWrite(in1, LOW); //Right Motor forword Pin 
+digitalWrite(in2, LOW); //Right Motor backword Pin 
+digitalWrite(in3, LOW); //Left Motor backword Pin 
+digitalWrite(in4, LOW); //Left Motor forword Pin 
+
+
 # Bill of Materials
 
 | **Part** | **Note** | **Price** | **Link** |
@@ -149,7 +228,9 @@ Serial.println(AcZ);
 
 # Other Resources/Examples
 - [Example 1](https://www.hackster.io/embeddedlab786/hand-gesture-control-robot-via-bluetooth-94b13d)
-- [Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
-- [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
+- [Example 2](https://youtu.be/BXXAcFOTnBo)
+  
+- [Resource 1](https://www.researchgate.net/publication/351765928_Hand_Gestures_Controlled_Robot_using_Arduino)
+- [Resource 2](https://www.geeksforgeeks.org/all-about-hc-05-bluetooth-module-connection-with-android/)
 
 To watch the BSE tutorial on how to create a portfolio, click here.
