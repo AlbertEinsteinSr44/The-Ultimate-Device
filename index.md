@@ -122,6 +122,7 @@ Serial.println(AcZ);
 
 ### Code for reciever
 [Provided by Hackster.io @Muhammad Ansar](https://www.hackster.io/embeddedlab786/hand-gesture-control-robot-via-bluetooth-94b13d)
+
 ```c++
 #include <SoftwareSerial.h>
 SoftwareSerial BT_Serial(0, 1); // RX, TX
