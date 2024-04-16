@@ -6,7 +6,7 @@ This repository is documentation for my hand controlled robot car. The steps and
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
-| Kebba J | Lafollette HS | Electrical Engineering | Incoming Sophmore
+| Kebba J | Lafollette HS | Electrical Engineering | Incoming Junior
 
 
 ![Headstone Image](logo.svg)
