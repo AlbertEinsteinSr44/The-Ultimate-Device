@@ -92,7 +92,7 @@ if(AcY>130 && flag==0){flag=1; BT_Serial.write('r');}
   
 if((AcX>70)&&(AcX<120)&&(AcY>70)&&(AcY<120)&&(flag==1)){flag=0;
 BT_Serial.write('s');
-}
+
 
 delay(100);  
 }
