@@ -202,7 +202,7 @@ digitalWrite(in1, LOW); //Right Motor forword Pin
 digitalWrite(in2, LOW); //Right Motor backword Pin 
 digitalWrite(in3, LOW); //Left Motor backword Pin 
 digitalWrite(in4, LOW); //Left Motor forword Pin 
-
+}
 
 # Bill of Materials
 
